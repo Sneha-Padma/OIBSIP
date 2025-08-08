@@ -1,0 +1,102 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.calculator {
+    background: rgba(40, 40, 40, 0.3); /* Transparent dark */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(12px); /* Glass effect */
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+
+#display {
+    width: 100%;
+    height: 60px;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    transition: all 0.3s ease;
+}
+
+#display:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.buttons {
+    display: grid;
+     grid-template-columns: repeat(4, minmax(60px, 1fr));
+    gap: 12px;
+}
+
+button {
+    padding: 18px;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.15s ease, background 0.2s ease-in-out;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.operator {
+    background: rgba(255, 149, 0, 0.4);
+}
+
+.operator:hover {
+    background: rgba(255, 149, 0, 0.6);
+}
+
+.clear {
+    background: rgba(231, 76, 60, 0.4);
+}
+
+.clear:hover {
+    background: rgba(231, 76, 60, 0.6);
+}
+
+.delete {
+    background: rgba(52, 152, 219, 0.4);
+}
+
+.delete:hover {
+    background: rgba(52, 152, 219, 0.6);
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
