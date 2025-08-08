@@ -14,7 +14,7 @@ This calculator supports basic operations like addition, subtraction, multiplica
 ![Calculator Screenshot](preview.png) <!-- optional if you add a screenshot -->
 
 ## 🚀 Live Demo
-[Click here to use the calculator](https://Sneha-Padma.github.io/OIBSIP/calculator/)
+[Click here to use the calculator](https://Sneha-Padma.github.io/OIBSIP/Calculator/)
 
 ## 🛠️ Technologies Used
 - HTML5  
